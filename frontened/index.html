@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Student Management System</h1>
+    <p>Connected to Spring Boot REST API</p>
+
+    <h2>Add New Student</h2>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Enter student name" required>
+        <input type="email" id="email" placeholder="Enter student email" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <p id="message"></p>
+
+    <h2>Student List</h2>
+
+    <button id="refreshBtn" type="button">Refresh Students</button>
+
+    <table>
+        <thead>
+            <tr>
+               <th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Course</th>
+<th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody id="studentList">
+            <tr>
+                <td colspan="3">Click Refresh Students to load data.</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>

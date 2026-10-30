@@ -8,7 +8,9 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/students")
+@CrossOrigin(origins = "http://127.0.0.1:5500")
 public class StudentController {
+
 
 private final StudentRepository repository;
 
